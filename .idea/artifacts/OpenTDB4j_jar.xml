@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="OpenTDB4j:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OpenTDB4j_jar</output-path>
+    <root id="archive" name="OpenTDB4j.jar">
+      <element id="module-output" name="OpenTDB4j" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20200518/json-20200518.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
