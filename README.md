@@ -28,17 +28,17 @@
  ```java
       OpenTDB obj = new OpenTDB();
  ```
-
-Now run the method by using
-```java
-      obj.getQuestion();
-```
  
  After that, you can set a category and a difficulty (optional (Will be random if none is set))
  ```java
       obj.getCategory = 29;
       obj.getDifficulty = "hard";
  ```
+
+Now run the method by using
+```java
+      obj.getQuestion();
+```
  
  You can now read out the API Response by using ``obj`` as follows
  ```java
