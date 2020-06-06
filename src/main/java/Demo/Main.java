@@ -11,15 +11,17 @@ public class Main {
         obj.getCategory = 32;
         obj.getDifficulty = "easy";
 
-        System.out.println(obj.getQuestion().question);
-        System.out.println(obj.getQuestion().correctAnswer);
+        obj.getQuestion();
 
-        for (int i = 0; i < obj.getQuestion().incorrectAnswers.length ; i++) {
-            System.out.println(obj.getQuestion().incorrectAnswers[i]);
+        System.out.println(obj.question);
+        System.out.println(obj.correctAnswer);
+
+        for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
+            System.out.println(obj.incorrectAnswers[i]);
         }
 
-        System.out.println(obj.getQuestion().category);
-        System.out.println(obj.getQuestion().difficulty);
+        System.out.println(obj.category);
+        System.out.println(obj.difficulty);
 
     }
 }
