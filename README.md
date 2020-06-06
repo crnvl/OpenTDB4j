@@ -4,21 +4,23 @@
  # Get Question
  ```java
  public static void main(String[] Args) throws LoginException {
-        OpenTDB obj = new OpenTDB();
-        obj.getCategory = 32;
-        obj.getDifficulty = "easy";
-
-        System.out.println(obj.getQuestion().question);
-        System.out.println(obj.getQuestion().correctAnswer);
-
-        for (int i = 0; i < obj.getQuestion().incorrectAnswers.length ; i++) {
-            System.out.println(obj.getQuestion().incorrectAnswers[i]);
-        }
-
-        System.out.println(obj.getQuestion().category);
-        System.out.println(obj.getQuestion().difficulty);
-
-    }
+         OpenTDB obj = new OpenTDB();
+         obj.getCategory = 32;
+         obj.getDifficulty = "easy";
+ 
+         obj.getQuestion();
+ 
+         System.out.println(obj.question);
+         System.out.println(obj.correctAnswer);
+ 
+         for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
+             System.out.println(obj.incorrectAnswers[i]);
+         }
+ 
+         System.out.println(obj.category);
+         System.out.println(obj.difficulty);
+ 
+     }
  ```
  
  # Configuration
@@ -26,6 +28,11 @@
  ```java
       OpenTDB obj = new OpenTDB();
  ```
+
+Now run the method by using
+```java
+      obj.getQuestion();
+```
  
  After that, you can set a category and a difficulty (optional (Will be random if none is set))
  ```java
@@ -33,15 +40,15 @@
       obj.getDifficulty = "hard";
  ```
  
- You can now read out the API Response by using ``obj.getQuestion()`` as follows
+ You can now read out the API Response by using ``obj`` as follows
  ```java
-      System.out.println(obj.getQuestion().question);
-      System.out.println(obj.getQuestion().correctAnswer);
+      System.out.println(obj.question);
+      System.out.println(obj.correctAnswer);
 
-      for (int i = 0; i < obj.getQuestion().incorrectAnswers.length ; i++) {
-          System.out.println(obj.getQuestion().incorrectAnswers[i]);
+      for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
+          System.out.println(obj.incorrectAnswers[i]);
       }
 
-      System.out.println(obj.getQuestion().category);
-      System.out.println(obj.getQuestion().difficulty);
+      System.out.println(obj.category);
+      System.out.println(obj.difficulty);
 ```
