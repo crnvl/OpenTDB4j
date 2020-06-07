@@ -10,7 +10,7 @@
         <dependency>
             <groupId>com.github.shinixsensei-dev</groupId>
             <artifactId>opentdb4j</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
         </dependency>
       </dependencies>
 ```
