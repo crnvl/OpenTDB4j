@@ -48,7 +48,8 @@
       obj.setCategory = 29;
       obj.setDifficulty = "hard";
  ```
-
+ 
+# Get Response
 Now run the method by using
 ```java
       obj.getQuestion();
