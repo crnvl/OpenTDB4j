@@ -4,7 +4,7 @@
 
     <groupId>com.github.shinixsensei-dev</groupId>
     <artifactId>OpenTDB4j</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>A Simple Wrapper for the OpenTDB API in Java Maven.</description>
@@ -30,7 +30,7 @@
         <connection>scm:git:git@github.com:shinixsensei-dev/OpenTDB4j.git</connection>
         <developerConnection>scm:git:git@github.com:shinixsensei-dev/OpenTDB4j.git</developerConnection>
         <url>http://github.com/shinixsensei-dev/OpenTDB4j</url>
-      <tag>OpenTDB4j-1.0.0</tag>
+      <tag>OpenTDB4j-1.0.1</tag>
   </scm>
 
     <properties>
