@@ -8,12 +8,12 @@ import java.io.IOException;
 
 public class OpenTDB {
 
-    public String question;
-    public String difficulty;
-    public String category;
-    public String[] incorrectAnswers = new String[3];
-    public String correctAnswer;
-    public String type;
+    public String getQuestion;
+    public String getDifficulty;
+    public String getCategory;
+    public String[] getIncorrectAnswers = new String[3];
+    public String getCorrectAnswer;
+    public String getType;
 
     public Integer setCategory;
     public String setDifficulty;
@@ -40,16 +40,16 @@ public class OpenTDB {
 
             JSONObject getSimple = new JSONObject(results.get(0).toString());
 
-            this.question = String.valueOf(getSimple.get("question"));
-            this.difficulty = String.valueOf(getSimple.get("difficulty"));
-            this.category = String.valueOf(getSimple.get("category"));
-            this.correctAnswer = String.valueOf(getSimple.get("correct_answer"));
-            this.type = String.valueOf(getSimple.get("type"));
+            this.getQuestion = String.valueOf(getSimple.get("question"));
+            this.getDifficulty = String.valueOf(getSimple.get("difficulty"));
+            this.getCategory = String.valueOf(getSimple.get("category"));
+            this.getCorrectAnswer = String.valueOf(getSimple.get("correct_answer"));
+            this.getType = String.valueOf(getSimple.get("type"));
 
             JSONArray incorrectAnswers = getSimple.getJSONArray("incorrect_answers");
 
             for (int i = 0; i < incorrectAnswers.length(); i++) {
-                this.incorrectAnswers[i] = String.valueOf(incorrectAnswers.get(i));
+                this.getIncorrectAnswers[i] = String.valueOf(incorrectAnswers.get(i));
             }
 
         } catch (IOException ioException) {

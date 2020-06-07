@@ -13,15 +13,15 @@ public class Main {
 
         obj.getQuestion();
 
-        System.out.println(obj.question);
-        System.out.println(obj.correctAnswer);
+        System.out.println(obj.getQuestion);
+        System.out.println(obj.getCorrectAnswer);
 
-        for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
-            System.out.println(obj.incorrectAnswers[i]);
+        for (int i = 0; i < obj.getIncorrectAnswers.length ; i++) {
+            System.out.println(obj.getIncorrectAnswers[i]);
         }
 
-        System.out.println(obj.category);
-        System.out.println(obj.difficulty);
+        System.out.println(obj.getCategory);
+        System.out.println(obj.getDifficulty);
 
     }
 }

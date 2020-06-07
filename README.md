@@ -19,20 +19,20 @@
  ```java
  public static void main(String[] Args) throws LoginException {
          OpenTDB obj = new OpenTDB();
-         obj.setCategory = 32;
-         obj.setDifficulty = "easy";
- 
-         obj.getQuestion();
- 
-         System.out.println(obj.question);
-         System.out.println(obj.correctAnswer);
- 
-         for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
-             System.out.println(obj.incorrectAnswers[i]);
-         }
- 
-         System.out.println(obj.category);
-         System.out.println(obj.difficulty);
+                 obj.setCategory = 32;
+                 obj.setDifficulty = "easy";
+         
+                 obj.getQuestion();
+         
+                 System.out.println(obj.getQuestion);
+                 System.out.println(obj.getCorrectAnswer);
+         
+                 for (int i = 0; i < obj.getIncorrectAnswers.length ; i++) {
+                     System.out.println(obj.getIncorrectAnswers[i]);
+                 }
+         
+                 System.out.println(obj.getCategory);
+                 System.out.println(obj.getDifficulty);
  
      }
  ```
@@ -56,13 +56,13 @@ Now run the method by using
  
  You can now read out the API Response by using ``obj`` as follows
  ```java
-      System.out.println(obj.question);
-      System.out.println(obj.correctAnswer);
+      System.out.println(obj.getQuestion);
+      System.out.println(obj.getCorrectAnswer);
 
-      for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
-          System.out.println(obj.incorrectAnswers[i]);
+      for (int i = 0; i < obj.getIncorrectAnswers.length ; i++) {
+          System.out.println(obj.getIncorrectAnswers[i]);
       }
 
-      System.out.println(obj.category);
-      System.out.println(obj.difficulty);
+      System.out.println(obj.getCategory);
+      System.out.println(obj.getDifficulty);
 ```
