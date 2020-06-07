@@ -3,7 +3,7 @@
  
 # Download
 
-### Maven
+### Apache Maven
 
 ```xml
 <dependency>
@@ -11,6 +11,16 @@
   <artifactId>OpenTDB4j</artifactId>
   <version>VERSION</version>
 </dependency>
+```
+
+# Gradle
+### Kotlin DSL
+```xml
+implementation("com.github.shinixsensei-dev:OpenTDB4j:VERSION")
+```
+### Groovy DSL
+```xml
+implementation 'com.github.shinixsensei-dev:OpenTDB4j:VERSION'
 ```
 It's recommended to use the newest Version in the [Release Tab](https://github.com/shinixsensei-dev/OpenTDB4j/releases).
  
