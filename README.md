@@ -15,7 +15,7 @@
       </dependencies>
 ```
  
- # Get Question
+ # Usage
  ```java
  public static void main(String[] Args) throws LoginException {
          OpenTDB obj = new OpenTDB();
