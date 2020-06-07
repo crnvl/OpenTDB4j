@@ -15,8 +15,8 @@ public class OpenTDB {
     public String correctAnswer;
     public String type;
 
-    public Integer getCategory;
-    public String getDifficulty;
+    public Integer setCategory;
+    public String setDifficulty;
 
     public OpenTDB getQuestion() {
         JSONObject json = null;
@@ -25,12 +25,12 @@ public class OpenTDB {
 
         try {
 
-            if(getCategory != null) {
-                args.append("&category=" + getCategory);
+            if(setCategory != null) {
+                args.append("&category=" + setCategory);
             }
 
-            if(getDifficulty != null) {
-                args.append("&difficulty=" + getDifficulty);
+            if(setDifficulty != null) {
+                args.append("&difficulty=" + setDifficulty);
             }
 
             json = UrlReader.readJsonFromUrl("https://opentdb.com/api.php?amount=1&type=multiple" + args);

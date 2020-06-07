@@ -5,8 +5,8 @@
  ```java
  public static void main(String[] Args) throws LoginException {
          OpenTDB obj = new OpenTDB();
-         obj.getCategory = 32;
-         obj.getDifficulty = "easy";
+         obj.setCategory = 32;
+         obj.setDifficulty = "easy";
  
          obj.getQuestion();
  
@@ -31,8 +31,8 @@
  
  After that, you can set a category and a difficulty (optional (Will be random if none is set))
  ```java
-      obj.getCategory = 29;
-      obj.getDifficulty = "hard";
+      obj.setCategory = 29;
+      obj.setDifficulty = "hard";
  ```
 
 Now run the method by using

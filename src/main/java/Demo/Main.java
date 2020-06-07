@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] Args) throws LoginException {
         OpenTDB obj = new OpenTDB();
-        obj.getCategory = 32;
-        obj.getDifficulty = "easy";
+        obj.setCategory = 32;
+        obj.setDifficulty = "easy";
 
         obj.getQuestion();
 
