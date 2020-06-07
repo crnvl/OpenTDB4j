@@ -1,6 +1,20 @@
 # OpenTDB4j
  A Simple Wrapper for the OpenTDB API in Java Maven.
  
+# Download
+
+### Maven
+
+```xml
+      <dependencies>
+        <dependency>
+            <groupId>com.github.shinixsensei-dev</groupId>
+            <artifactId>opentdb4j</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+      </dependencies>
+```
+ 
  # Get Question
  ```java
  public static void main(String[] Args) throws LoginException {
