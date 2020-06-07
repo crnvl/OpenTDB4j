@@ -9,9 +9,10 @@
 <dependency>
   <groupId>com.github.shinixsensei-dev</groupId>
   <artifactId>OpenTDB4j</artifactId>
-  <version>1.1.0</version>
+  <version>VERSION</version>
 </dependency>
 ```
+It's recommended to use the newest Version in the [Release Tab](https://github.com/shinixsensei-dev/OpenTDB4j/releases).
  
  # Usage
  ```java
