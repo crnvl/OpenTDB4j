@@ -8,15 +8,47 @@ import java.io.IOException;
 
 public class OpenTDB {
 
-    public String getQuestion;
-    public String getDifficulty;
-    public String getCategory;
-    public String[] getIncorrectAnswers = new String[3];
-    public String getCorrectAnswer;
-    public String getType;
+    public String question;
+    public String difficulty;
+    public String category;
+    public String[] incorrectAnswers = new String[3];
+    public String correctAnswer;
+    public String type;
 
-    public Integer setCategory;
-    public String setDifficulty;
+    int categorySet = 0;
+    String difficultySet;
+
+    public void setCategory(int value) {
+        categorySet = value;
+    }
+
+    public void setDifficulty(String s) {
+        difficultySet = s;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String[] getIncorrectAnswers() {
+        return incorrectAnswers;
+    }
+
+    public String getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public String getType() {
+        return type;
+    }
 
     public OpenTDB getTrivia() {
         JSONObject json = null;
@@ -25,12 +57,12 @@ public class OpenTDB {
 
         try {
 
-            if(setCategory != null) {
-                args.append("&category=" + setCategory);
+            if(categorySet != 0) {
+                args.append("&category=" + categorySet);
             }
 
-            if(setDifficulty != null) {
-                args.append("&difficulty=" + setDifficulty);
+            if(difficultySet != null) {
+                args.append("&difficulty=" + difficultySet);
             }
 
             json = UrlReader.readJsonFromUrl("https://opentdb.com/api.php?amount=1&type=multiple" + args);
@@ -40,16 +72,16 @@ public class OpenTDB {
 
             JSONObject getSimple = new JSONObject(results.get(0).toString());
 
-            this.getQuestion = String.valueOf(getSimple.get("question"));
-            this.getDifficulty = String.valueOf(getSimple.get("difficulty"));
-            this.getCategory = String.valueOf(getSimple.get("category"));
-            this.getCorrectAnswer = String.valueOf(getSimple.get("correct_answer"));
-            this.getType = String.valueOf(getSimple.get("type"));
+            this.question = String.valueOf(getSimple.get("question"));
+            this.difficulty = String.valueOf(getSimple.get("difficulty"));
+            this.category = String.valueOf(getSimple.get("category"));
+            this.correctAnswer = String.valueOf(getSimple.get("correct_answer"));
+            this.type = String.valueOf(getSimple.get("type"));
 
-            JSONArray incorrectAnswers = getSimple.getJSONArray("incorrect_answers");
+            JSONArray incorrectAnswersList = getSimple.getJSONArray("incorrect_answers");
 
-            for (int i = 0; i < incorrectAnswers.length(); i++) {
-                this.getIncorrectAnswers[i] = String.valueOf(incorrectAnswers.get(i));
+            for (int i = 0; i < incorrectAnswersList.length(); i++) {
+                this.incorrectAnswers[i] = String.valueOf(incorrectAnswersList.get(i));
             }
 
         } catch (IOException ioException) {
