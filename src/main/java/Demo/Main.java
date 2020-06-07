@@ -16,8 +16,9 @@ public class Main {
         System.out.println(obj.getQuestion());
         System.out.println(obj.getCorrectAnswer());
 
-        for (int i = 0; i < obj.getIncorrectAnswers().length ; i++) {
-            System.out.println(obj.getIncorrectAnswers()[i]);
+        String[] incorrectAnswers = obj.getIncorrectAnswers();
+        for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
+            System.out.println(obj.incorrectAnswers[i]);
         }
 
         System.out.println(obj.getCategory());

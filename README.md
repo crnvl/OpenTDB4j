@@ -16,23 +16,26 @@
  # Usage
  ```java
  public static void main(String[] Args) throws LoginException {
-         OpenTDB obj = new OpenTDB();
-                 obj.setCategory(29);
-                 obj.setDifficulty("easy");
-         
-                 obj.getTrivia();
-         
-                 System.out.println(obj.getQuestion());
-                 System.out.println(obj.getCorrectAnswer());
-         
-                 for (int i = 0; i < obj.getIncorrectAnswers().length ; i++) {
-                     System.out.println(obj.getIncorrectAnswers()[i]);
-                 }
-         
-                 System.out.println(obj.getCategory());
-                 System.out.println(obj.getDifficulty());
- 
-     }
+    public static void main(String[] Args) throws LoginException {
+        OpenTDB obj = new OpenTDB();
+        obj.setCategory(29);
+        obj.setDifficulty("easy");
+
+        obj.getTrivia();
+
+        System.out.println(obj.getQuestion());
+        System.out.println(obj.getCorrectAnswer());
+
+        String[] incorrectAnswers = obj.getIncorrectAnswers();
+        for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
+            System.out.println(obj.incorrectAnswers[i]);
+        }
+
+        System.out.println(obj.getCategory());
+        System.out.println(obj.getDifficulty());
+        System.out.println(obj.getType());
+
+    }
  ```
  View [OpenTDB](https://opentdb.com/api_config.php) to see available selections for ``.setCategory()`` and ``.setDifficulty()``.
  
@@ -59,9 +62,10 @@ Now run the method by using
     System.out.println(obj.getQuestion());
     System.out.println(obj.getCorrectAnswer());
                
-    for (int i = 0; i < obj.getIncorrectAnswers().length ; i++) {
-        System.out.println(obj.getIncorrectAnswers()[i]);
-    }
+        String[] incorrectAnswers = obj.getIncorrectAnswers();
+        for (int i = 0; i < obj.incorrectAnswers.length ; i++) {
+            System.out.println(obj.incorrectAnswers[i]);
+        }
                
     System.out.println(obj.getCategory());
     System.out.println(obj.getDifficulty());
