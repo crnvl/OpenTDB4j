@@ -6,13 +6,11 @@
 ### Maven
 
 ```xml
-      <dependencies>
-        <dependency>
-            <groupId>com.github.shinixsensei-dev</groupId>
-            <artifactId>opentdb4j</artifactId>
-            <version>1.0.4</version>
-        </dependency>
-      </dependencies>
+<dependency>
+  <groupId>com.github.shinixsensei-dev</groupId>
+  <artifactId>OpenTDB4j</artifactId>
+  <version>1.0.4</version>
+</dependency>
 ```
  
  # Usage
@@ -36,6 +34,7 @@
  
      }
  ```
+ View [OpenTDB](https://opentdb.com/api_config.php) to see available selections for ``.setCategory()`` and ``.setDifficulty()``.
  
  # Configuration
  First, create a new OpenTDB Object
@@ -48,7 +47,8 @@
       obj.setCategory = 29;
       obj.setDifficulty = "hard";
  ```
-
+ 
+# Get Response
 Now run the method by using
 ```java
       obj.getTrivia();
