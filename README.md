@@ -3,7 +3,7 @@
  
 # Download
 
-### Apache Maven
+# Apache Maven
 
 ```xml
 <dependency>
