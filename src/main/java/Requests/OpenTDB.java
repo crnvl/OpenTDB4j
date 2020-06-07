@@ -18,7 +18,7 @@ public class OpenTDB {
     public Integer setCategory;
     public String setDifficulty;
 
-    public OpenTDB getQuestion() {
+    public OpenTDB getTrivia() {
         JSONObject json = null;
 
         StringBuilder args = new StringBuilder();

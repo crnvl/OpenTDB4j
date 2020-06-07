@@ -22,7 +22,7 @@
                  obj.setCategory = 32;
                  obj.setDifficulty = "easy";
          
-                 obj.getQuestion();
+                 obj.getTrivia();
          
                  System.out.println(obj.getQuestion);
                  System.out.println(obj.getCorrectAnswer);
@@ -51,7 +51,7 @@
 
 Now run the method by using
 ```java
-      obj.getQuestion();
+      obj.getTrivia();
 ```
  
  You can now read out the API Response by using ``obj`` as follows

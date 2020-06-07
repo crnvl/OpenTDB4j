@@ -11,7 +11,7 @@ public class Main {
         obj.setCategory = 32;
         obj.setDifficulty = "easy";
 
-        obj.getQuestion();
+        obj.getTrivia();
 
         System.out.println(obj.getQuestion);
         System.out.println(obj.getCorrectAnswer);
