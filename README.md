@@ -28,7 +28,6 @@ It's recommended to use the newest Version in the [Release Tab](https://github.c
  
  # Usage
  ```java
- public static void main(String[] Args) throws LoginException {
     public static void main(String[] Args) throws LoginException {
         OpenTDB obj = new OpenTDB();
         obj.setCategory(29);
