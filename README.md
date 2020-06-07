@@ -6,13 +6,11 @@
 ### Maven
 
 ```xml
-      <dependencies>
-        <dependency>
-            <groupId>com.github.shinixsensei-dev</groupId>
-            <artifactId>opentdb4j</artifactId>
-            <version>1.0.4</version>
-        </dependency>
-      </dependencies>
+<<dependency>
+  <groupId>com.github.shinixsensei-dev</groupId>
+  <artifactId>OpenTDB4j</artifactId>
+  <version>1.0.4</version>
+</dependency>
 ```
  
  # Usage
