@@ -34,7 +34,7 @@
  
      }
  ```
- View [OpenTDB](https://opentdb.com/api_config.php) to view available selections for ``.setCategory()`` and ``.setDifficulty()``.
+ View [OpenTDB](https://opentdb.com/api_config.php) to see available selections for ``.setCategory()`` and ``.setDifficulty()``.
  
  # Configuration
  First, create a new OpenTDB Object
