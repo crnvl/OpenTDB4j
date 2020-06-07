@@ -22,6 +22,7 @@ public class Main {
 
         System.out.println(obj.getCategory());
         System.out.println(obj.getDifficulty());
+        System.out.println(obj.getType());
 
     }
 }
