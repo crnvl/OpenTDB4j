@@ -2,6 +2,7 @@
 
 # OpenTDB4j
  A Simple Wrapper for the OpenTDB API in Java Maven.
+ [Full Documentation](https://shinixsensei-dev.github.io/java/opentdb4j/docs/apidocs/)
  
 # Download
 
