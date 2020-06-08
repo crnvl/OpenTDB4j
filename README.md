@@ -1,3 +1,4 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.shinixsensei-dev/OpenTDB4j/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser)
 
 # OpenTDB4j
  A Simple Wrapper for the OpenTDB API in Java Maven.
